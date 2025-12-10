@@ -4,6 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>SONSUZ.AY | Neon Gezgin v1.3 (Hızlı İvmeölçer)</title>
+    
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-1819947444660683"
+         crossorigin="anonymous"></script>
+
     <style>
         /* CSS: Koyu Tema ve Neon Vurgular (Öncekiyle Aynı) */
         body {
@@ -114,10 +118,7 @@
     let gameRunning = false;
     let currentRoverX = container.offsetWidth / 2; 
     
-    // **********************************
-    // HIZ ARTIŞI YAPILAN YER
-    // **********************************
-    const ROVER_SPEED = 25; // Hız 10'dan 25'e çıkarıldı!
+    const ROVER_SPEED = 25; 
 
     // --- Başlatma ve Sıfırlama ---
     overlay.addEventListener('click', startGame);
@@ -151,8 +152,7 @@
         const containerWidth = container.offsetWidth;
         const roverWidth = rover.offsetWidth;
         
-        // Hızı daha tepkisel hale getirmek için delta zamanını kaldırıyoruz, çünkü FPS zaten sabit.
-        currentRoverX -= tiltX * ROVER_SPEED * 0.02; // 20ms (0.02s) güncelleme döngüsüne göre ayarlandı.
+        currentRoverX -= tiltX * ROVER_SPEED * 0.02; 
 
         // Sınır Kontrolü
         if (currentRoverX < roverWidth / 2) {
@@ -225,7 +225,7 @@
         overlay.innerHTML = `
             <h1>OYUN BİTTİ!</h1>
             <p>Son Puanınız: ${score}</p>
-            <p>Hız sorununu çözdük!</p>
+            <p>AdSense kodu yerleştirildi!</p>
             <p style="color: #00ff7f;">Tekrar başlamak için tıkla.</p>
         `;
         overlay.style.display = 'flex';
