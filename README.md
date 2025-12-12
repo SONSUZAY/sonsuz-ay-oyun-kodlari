@@ -1,2 +1,2 @@
-# neon-gezgin
-SONSUZ.AY HTML Neon Oyun Projesi
+# sonsuz-ay-oyun-kodlari
+SONSUZ.AY HTML Oyun kod Projesi
