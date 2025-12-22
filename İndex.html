@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nail Teknik | Profesyonel Sıhhi Tesisat Çözümleri</title>
+    <style>
+        /* Modern CSS Sıfırlama ve Font */
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            line-height: 1.6;
+            color: #333;
+            scroll-behavior: smooth;
+        }
+
+        /* Renk Paleti */
+        :root {
+            --ana-renk: #0056b3; /* Profesyonel Mavi */
+            --ikinci-renk: #f8f9fa;
+            --vurgu-renk: #ffc107; /* Dikkat çekici sarı */
+        }
+
+        header {
+            background: var(--ana-renk);
+            color: white;
+            padding: 1rem 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-weight: bold;
+        }
+
+        /* Kahraman (Hero) Bölümü */
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), 
+                        url('https://images.unsplash.com/photo-1581244277943-fe4a9c777189?auto=format&fit=crop&w=1200&q=80');
+            background-size: cover;
+            background-position: center;
+            height: 60vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            padding: 0 20px;
+        }
+
+        .hero h1 { font-size: 3rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; margin-bottom: 20px; }
+
+        .btn {
+            background: var(--vurgu-renk);
+            color: #333;
+            padding: 12px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+        /* Hizmetler Bölümü */
+        .services {
+            padding: 50px 10%;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            background: var(--ikinci-renk);
+        }
+
+        .service-card {
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+        /* İletişim Bölümü */
+        .contact {
+            padding: 50px 10%;
+            text-align: center;
+        }
+
+        footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo"><h2>NAİL TEKNİK</h2></div>
+        <nav>
+            <a href="#hizmetler">Hizmetler</a>
+            <a href="#iletisim">İletişim</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Su Tesisatında Güvenilir Adres</h1>
+        <p>7/24 Acil Müdahale ve Profesyonel İşçilik</p>
+        <a href="tel:+905550000000" class="btn">Hemen Ara</a>
+    </section>
+
+    <section id="hizmetler" class="services">
+        <div class="service-card">
+            <h3>🚰 Sıhhi Tesisat</h3>
+            <p>Yeni hat döşeme, onarım ve genel bakım hizmetleri.</p>
+        </div>
+        <div class="service-card">
+            <h3>🔥 Kalorifer Bakımı</h3>
+            <p>Petek temizliği ve ısıtma sistemleri verimlilik artırma.</p>
+        </div>
+        <div class="service-card">
+            <h3>🛠️ Arıza Tespit</h3>
+            <p>Kırmadan dökmeden cihazla su kaçağı tespiti.</p>
+        </div>
+    </section>
+
+    <section id="iletisim" class="contact">
+        <h2>Bize Ulaşın</h2>
+        <p>📍 Adres: Örnek Mahallesi, Tesisatçılar Sokak No:34, İstanbul</p>
+        <p>📞 Telefon: <a href="tel:+905550000000">0555 000 00 00</a></p>
+        <p>📧 E-posta: info@nailteknik.com</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Nail Teknik. Tüm Hakları Saklıdır. | **SONSUZ.AY** Altyapısıyla Geliştirilmiştir.</p>
+    </footer>
+
+</body>
+</html>
